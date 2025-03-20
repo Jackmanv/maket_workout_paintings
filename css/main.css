@@ -47,6 +47,7 @@ header li:hover {
 
 .first_block img {
     max-width: 540px;
+    margin-right: 30px;
 }
 
 .hero_title {
@@ -79,4 +80,16 @@ header li:hover {
 .right_side button:hover {
     color: white;
     background-color: #598D66;
+}
+
+.reproduction {
+    padding: 0px 165px;
+    font-size: 40px;
+}
+
+.reproduction label {
+    padding: 10px;
+    background-color: #D4E8D9;
+    color: black;
+    border: 0;
 }
