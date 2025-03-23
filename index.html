@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ink. House</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/Star 1.svg" type="image/svg">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-    <header class="container">
+
+    <header>
+        <div class="header_containe container">
         <img src="images/logo.svg" alt="" class="logo">
         <ul>
-            <li>Репродукции</li>
-            <li>Новинки</li>
-            <li>О нас</li>
+            <li><a href="#reprod">Репродукции</a></li>
+            <li><a href="#new">Новинки</a></li>
+            <li><a href="#aboutus">О нас</a></li>
             <li><img src="images/cart.svg" alt=""></li>
         </ul>
+    </div>
     </header>
 
-    <div class="first_block">
+    <div class="first_block container">
         <img src="images/Bird.png" alt="">
         <div class="right_side">
             <h1 class="hero_title">Реплики картин от <span>Ink. House</span></h1>
@@ -28,17 +33,103 @@
         </div>
     </div>
 
-    <div class="reproduction">
+    <div class="reproduction container" id="reprod">
         <div class="head">
             Репродукции
-            
+            <form onchange="myFunction()" name="frmRadio" id="radio-buttons">
+                <label><input type="radio" name="filters" class="filters" checked id="france"><span class="span_filters">Франция</span></label>
                 
-                <label for=""><input type="text" type="radio">Франция</label>
+                <label><input type="radio" name="filters" class="filters" id="germany"><span class="span_filters">Германия</span></label>
                 
-                <label for=""><input type="text" type="radio">Германия</label>
-                
-                <label for=""><input type="text" type="radio">Англия</label>
+                <label><input type="radio" name="filters" class="filters" id="england"><span class="span_filters">Англия</span></label>
+            </form>
+        </div>
+
+        <div class="cards" id="text">
+            <div class="france_1 container_cards" id="france_card">
+                <img src="images/france/france1.jpg" alt="">
+                <div class="artist">Марсель Руссо</div>
+                <div class="name_painting">Охота Амура</div>
+                <div class="materials">Холст, масло (50х80)</div> 
+                <div class="price">14 500 руб</div>
+                <button class="in_a_cart">В корзину</button>
+            </div>
+
+            <div class="france_2 container_cards" id="france_card">
+                <img src="images/france/france2.jpg" alt="">
+                <div class="artist">Анри Селин</div>
+                <div class="name_painting">Дама с собачкой</div>
+                <div class="materials">Акрил, бумага (50х80) </div> 
+                <div class="price">16 500 руб</div>
+                <button class="in_a_cart">В корзину</button>
+            </div>
+
+            <div class="france_3 container_cards" id="france_card">
+                <img src="images/france/france3.jpg" alt="">
+                <div class="artist">Франсуа Дюпон</div>
+                <div class="name_painting">Процедура</div>
+                <div class="materials">Цветная литография (40х60) </div> 
+                <div class="price">20 000 руб</div>
+                <button class="in_a_cart">В корзину</button>
+            </div>
+
+            <div class="france_4 container_cards" id="france_card">
+                <img src="images/france/france4.jpg" alt="">
+                <div class="artist">Луи Детуш</div>
+                <div class="name_painting">Роза</div>
+                <div class="materials">Бумага, акрил (50х80) </div> 
+                <div class="price">12 000 руб</div>
+                <button class="in_a_cart">В корзину</button>
+            </div>
+
+            <div class="france_5 container_cards" id="france_card">
+                <img src="images/france/france5.jpg" alt="">
+                <div class="artist">Франсуа Дюпон</div>
+                <div class="name_painting">Птичья трапеза</div>
+                <div class="materials">Цветная литография (40х60)</div> 
+                <div class="price">22 500 руб</div>
+                <button class="in_a_cart">В корзину</button>
+            </div>
+
+            <div class="france_6 container_cards" id="france_card">
+                <img src="images/france/france6.jpg" alt="">
+                <div class="artist">Пьер Моранж</div>
+                <div class="name_painting">Пейзаж с рыбой</div>
+                <div class="materials">Цветная литография (40х60) </div> 
+                <div class="price">20 000 руб</div>
+                <button class="in_a_cart">В корзину</button>
+            </div>
         </div>
     </div>
+
+    <div class="promo" id="new">
+        <div class="collection container">
+            <div class="flex"><img src="images/Star 2.png" alt="" class="star_img"><h1>Новая коллекция <br>французских авторов</h1></div>
+            <div class="description">
+                <p>Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений. 
+                </p>Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
+            </div>
+            <button class="yellow_btn">Ознакомиться</button>
+        </div>
+    </div>
+
+    <div class="dream_team container" id="aboutus">
+        <img src="images/Window.png" alt="">
+        <div class="team">
+            <h1>Наша команда</h1>
+            Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.
+            <div class="flex">
+                <img src="images/team1.png" alt="">
+                <img src="images/team2.jpg" alt="">
+                <img src="images/team3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot container">
+            <img src="images/logo.svg" alt="">
+        </div>
+    </footer>
 </body>
 </html>
